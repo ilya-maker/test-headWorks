@@ -1,0 +1,80 @@
+@import '../constants.scss';
+
+.RegistrationForm {
+    margin-top: 40px;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $colorOfBorder;
+        border-radius: 16px;
+        padding: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    &__label {
+        display: grid;
+        margin-bottom: 30px;
+        cursor: pointer;
+        position: relative;
+
+        &--nopointer {
+            cursor: default;
+            margin-bottom: 5px;
+        }
+
+        &--small {
+            cursor: pointer;
+            margin-right: 10px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__gender {
+        margin: 10px 0 30px;
+        position: relative;
+    }
+
+    &__input {
+        margin-top: 10px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid $colorOfBorder;
+        font-size: 1.2rem;
+        color: currentColor;
+        outline: none;
+
+        &::placeholder {
+            color: $colorOfText;
+            font-size: 1em;
+        }
+    }
+
+    &__select {
+        margin-top: 10px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid $colorOfBorder;
+        font-size: 1.2rem;
+        color: currentColor;
+        outline: none;
+    }
+
+    &__button {
+        font-size: 1.2rem;
+        color: #FFFFFF;
+        margin: 0 auto;
+        background-color: $colorOfBorder;
+        border-radius: 16px;
+        border: none;
+        padding: 5px 50px;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

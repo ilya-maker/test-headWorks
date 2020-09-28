@@ -1,0 +1,26 @@
+@import '../constants.scss';
+
+.ValidateError {
+    position: absolute;
+    background-color: #FFFFFF;
+    opacity: 0.9;
+    top: 120%;
+    left: 20%;
+    border-radius: 16px;
+
+    &__arrow::after {
+        content: ''; 
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -70%;
+        border: 10px solid transparent;
+        border-bottom: 10px solid #FFFFFF;
+       }
+
+    &__text {
+        color: $colorOfBorder;
+        padding: 5px 10px;
+        margin: 0;
+    }
+}

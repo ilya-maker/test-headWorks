@@ -1,0 +1,35 @@
+@import '../constants.scss';
+
+.Header {
+    border-bottom: 1px solid $colorOfBorder;
+
+    &__list {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    &__item {
+        width: 120px;
+        & > a {
+            color: #FFFFFF;
+        }
+    }
+
+    &__link {
+            text-decoration: none;
+            background-image: linear-gradient(90deg, currentColor, $colorOfBorder);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 4px;
+            transition: background-size ease 0.5s;
+            padding: 6px;
+            border-radius: 10px;
+          &:hover,
+          &:focus {
+            text-decoration: none;
+            background-size: 100% 4px;
+          }
+    }
+}
